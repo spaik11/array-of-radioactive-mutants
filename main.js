@@ -32,9 +32,11 @@ function oddOrEven(arr) {
 
 function changeNextThreeToValue(start, arr, val) {
   let i = start;
-  
-  while(i < arr.length) {
+  let count = 0;
+
+  while(i < arr.length && count < 3) {
     arr[i] = val;
+    count++;
     i++;
   }
 }
